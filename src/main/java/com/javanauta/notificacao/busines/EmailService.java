@@ -12,7 +12,6 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
@@ -50,7 +49,4 @@ public class EmailService {
             throw new EmailExceptions("Erro ao enviar o email ", e.getCause());
         }
     }
-
-
-
 }
